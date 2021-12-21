@@ -15,12 +15,16 @@ npm install --save chakra-ui-date-input
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'chakra-ui-date-input'
-import 'chakra-ui-date-input/dist/index.css'
+import {DatePicker} from 'chakra-ui-date-input'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <DatePicker
+            colorScheme='gray'
+              placeholder='Date picker placeholder'
+              name='date'
+              onChange={(date: string) => console.log(date)}
+            />
   }
 }
 ```

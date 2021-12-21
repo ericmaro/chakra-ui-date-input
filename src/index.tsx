@@ -37,7 +37,7 @@ const todayTimestamp =
 
 export interface IDatePickerProps extends Omit<ChakraInputProps, 'onChange'> {
   dateFormat?: string
-  onChange: (date: String) => void
+  onChange: (date: string) => void
 }
 
 export const DatePicker = (props: IDatePickerProps) => {
