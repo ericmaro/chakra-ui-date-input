@@ -10,6 +10,10 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
+    "@chakra-ui/icons": "link:../@chakra-ui/icons",
+    "@chakra-ui/react": "link:../@chakra-ui/react",
+    "@emotion/react": "link:../node_modules/@emotion/react",
+    "@emotion/styled": "link:../node_modules/@emotion/styled",
     "@testing-library/jest-dom": "link:../node_modules/@testing-library/jest-dom",
     "@testing-library/react": "link:../node_modules/@testing-library/react",
     "@testing-library/user-event": "link:../node_modules/@testing-library/user-event",
@@ -17,18 +21,14 @@
     "@types/node": "link:../node_modules/@types/node",
     "@types/react": "link:../node_modules/@types/react",
     "@types/react-dom": "link:../node_modules/@types/react-dom",
+    "chakra-ui-date-input": "link:..",
+    "dayjs": "link:../node_modules/dayjs",
+    "framer-motion": "link:../node_modules/framer-motion",
     "react": "link:../node_modules/react",
+    "react-code-blocks": "^0.0.9-0",
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "link:../node_modules/react-scripts",
-    "typescript": "link:../node_modules/typescript",
-    "chakra-ui-date-input": "link:..",
-    "@chakra-ui/icons":  "link:../@chakra-ui/icons",
-    "@chakra-ui/react": "link:../@chakra-ui/react",
-    "@emotion/react": "link:../node_modules/@emotion/react",
-    "@emotion/styled": "link:../node_modules/@emotion/styled",
-    "dayjs": "link:../node_modules/dayjs",
-    "framer-motion": "link:../node_modules/framer-motion"
-
+    "typescript": "link:../node_modules/typescript"
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3"
