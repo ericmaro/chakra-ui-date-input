@@ -4,6 +4,8 @@
 
 [![NPM](https://img.shields.io/npm/v/chakra-ui-date-input.svg)](https://www.npmjs.com/package/chakra-ui-date-input) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+
+## DEMO -> [demo](https://chakra-ui-date-input.vercel.app/)
 ## Install
 
 ```bash
