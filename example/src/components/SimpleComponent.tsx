@@ -13,7 +13,6 @@ import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 import { CodeBlock, dracula, purebasic } from 'react-code-blocks'
 
 const code = ` <DatePicker
-colorScheme='gray'
   placeholder='Date picker placeholder'
   name='date'
   onChange={(date: string) => console.log(date)}
@@ -30,7 +29,6 @@ export default function SimpleComponent() {
       <Box w='420px' h='100px'>
         <VStack align='center' alignContent='center' gap={8} direction='column'>
           <DatePicker
-            colorScheme='blue'
             placeholder='Date picker placeholder'
             name='date'
             onChange={(date: string) => console.log(date)}

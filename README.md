@@ -19,8 +19,7 @@ import {DatePicker} from 'chakra-ui-date-input'
 
 class Example extends Component {
   render() {
-    return <DatePicker
-            colorScheme='gray'
+    return <DatePicke
               placeholder='Date picker placeholder'
               name='date'
               onChange={(date: string) => console.log(date)}
