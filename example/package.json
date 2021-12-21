@@ -1,11 +1,11 @@
 {
   "name": "chakra-ui-date-input-example",
-  "homepage": ".",
+  "homepage": "../",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
-    "build": "node ../node_modules/react-scripts/bin/react-scripts.js build",
+    "build": "node ../node_modules/react-scripts/bin/react-scripts.js build mv ../docs",
     "test": "node ../node_modules/react-scripts/bin/react-scripts.js test",
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
@@ -36,6 +36,9 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "files": [
+    "docs"
+  ],
   "browserslist": {
     "production": [
       ">0.2%",
