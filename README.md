@@ -24,6 +24,7 @@ class Example extends Component {
     return <DatePicke
               placeholder='Date picker placeholder'
               name='date'
+              dateFormat='dd/MM/yyyy'
               onChange={(date: string) => console.log(date)}
             />
   }

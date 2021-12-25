@@ -30,6 +30,7 @@ export default function SimpleComponent() {
         <VStack align='center' alignContent='center' gap={8} direction='column'>
           <DatePicker
             placeholder='Date picker placeholder'
+            dateFormat='dd/MM/yyyy'
             name='date'
             onChange={(date: string) => console.log(date)}
           />

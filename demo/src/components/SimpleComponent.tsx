@@ -31,6 +31,7 @@ export default function SimpleComponent() {
           <DatePicker
             placeholder='Date picker placeholder'
             name='date'
+            dateFormat='dd/MM/yyyy'
             onChange={(date: string) => console.log(date)}
           />
           <IconButton
