@@ -21,7 +21,7 @@ import {DatePicker} from 'chakra-ui-date-input'
 
 class Example extends Component {
   render() {
-    return <DatePicke
+    return <DatePicker
               placeholder='Date picker placeholder'
               name='date'
               dateFormat='dd/MM/yyyy'
