@@ -37,6 +37,7 @@ const todayTimestamp =
 
 export interface IDatePickerProps extends Omit<ChakraInputProps, 'onChange'> {
   dateFormat?: string
+  disabled?: boolean
   onChange: (date: string) => void
 }
 
@@ -98,10 +99,10 @@ export const DatePicker = (props: IDatePickerProps) => {
   }
   return (
     <Menu {...rest}>
-      <MenuButton w='100%' type='button'>
+      <MenuButton w='100%' type='button' disabled={props.disabled}>
         <InputGroup>
           <Input color={color} ref={inputRef} {...rest} />
-          <InputRightElement children={<ChevronDownIcon w={5} h={5} />} />
+          <InputRightElement children={<ChevronDownIcon w={5} h={'100%'} />} />
         </InputGroup>
       </MenuButton>
       <MenuList>
