@@ -105,7 +105,7 @@ export const DatePicker = (props: IDatePickerProps) => {
           <InputRightElement children={<ChevronDownIcon w={5} h={'100%'} />} />
         </InputGroup>
       </MenuButton>
-      <MenuList>
+      <MenuList zIndex={'9'}>
         <Center p={3}>
           <HStack>
             <IconButton
