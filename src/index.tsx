@@ -37,6 +37,7 @@ const todayTimestamp =
 
 export interface IDatePickerProps extends Omit<ChakraInputProps, 'onChange'> {
   dateFormat?: string
+  disabled?: boolean
   onChange: (date: string) => void
 }
 
@@ -98,13 +99,13 @@ export const DatePicker = (props: IDatePickerProps) => {
   }
   return (
     <Menu {...rest}>
-      <MenuButton w='100%' type='button'>
+      <MenuButton w='100%' type='button' disabled={props.disabled}>
         <InputGroup>
           <Input color={color} ref={inputRef} {...rest} />
-          <InputRightElement children={<ChevronDownIcon w={5} h={5} />} />
+          <InputRightElement children={<ChevronDownIcon w={5} h={'100%'} />} />
         </InputGroup>
       </MenuButton>
-      <MenuList>
+      <MenuList zIndex={'9'}>
         <Center p={3}>
           <HStack>
             <IconButton
@@ -168,8 +169,8 @@ export const DatePicker = (props: IDatePickerProps) => {
                   disabled={day.month !== 0}
                   color={color}
                   backgroundColor={
-                    isCurrentDay(day)
-                      ? 'gray.800'
+                    isCurrentDay(day) && !isSelectedDay(day)
+                      ? 'gray.200'
                       : isSelectedDay(day) && day.month === 0
                       ? 'gray.800'
                       : ''
