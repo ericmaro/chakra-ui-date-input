@@ -169,8 +169,8 @@ export const DatePicker = (props: IDatePickerProps) => {
                   disabled={day.month !== 0}
                   color={color}
                   backgroundColor={
-                    isCurrentDay(day)
-                      ? 'gray.800'
+                    isCurrentDay(day) && !isSelectedDay(day)
+                      ? 'gray.200'
                       : isSelectedDay(day) && day.month === 0
                       ? 'gray.800'
                       : ''
